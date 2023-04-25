@@ -11,6 +11,7 @@ class UsersManagersTests(TestCase):
         self.assertTrue(user.is_active)
         self.assertFalse(user.is_staff)
         self.assertFalse(user.is_superuser)
+        print("hello")
         try:
             # username is None for the AbstractUser option
             # username does not exist for the AbstractBaseUser option
